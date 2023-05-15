@@ -1,20 +1,20 @@
 function fizz_buzz(n) {
-    let result = [];
+    let cicle = [];
     for (let i = 1; i <= n; i++) {
         if (i % 3 === 0 && i % 5 === 0) {
-            result.push("FizzBuzz");
+            cicle.push("FizzBuzz");
         } else if (i % 3 === 0) {
-            result.push("Fizz");
+            cicle.push("Fizz");
         } else if (i % 5 === 0) {
-            result.push("Buzz");
+            cicle.push("Buzz");
         } else {
-            result.push(i);
+            cicle.push(i);
         }
     }
-    return result
+    return cicle
 }
 
-let limit = 15;
-let cicle = fizz_buzz(limit);
+let input = 15;
+let output = fizz_buzz(input);
 
-console.log(cicle);
+console.log(output);
